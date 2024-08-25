@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Aada</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body onload="readAll()">
+        <header>
+            <div class="navContainer">
+                <nav>
+                    <ul id="navList">
+                        <li>
+                            <p id="navLogo">Recipe Aada</p>
+                        </li>
+                        <li>
+                            <div id="navItems">
+                                <a href="#">Home</a>
+                                <a href="#">Contact</a>
+                                <a href="#">About</a>
+                                <button class="login">Signup</button>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <div class="container">
+                <div class="form_container">
+          
+            <form class="create_form">
+             <input type="text" class="name" placeholder="Enter name">
+             <input type="text" class="recipe" placeholder="Enter Recipe">
+             <button type="button" onclick="add()">create</button>
+            </form>
+            <form class="update_form">
+                <input type="text" hidden class="id">
+             <input type="text" class="name_u">
+             <input type="text" class="recipe_u">
+             <button type="button" onclick="update()">update</button>
+            </form>
+               <div class="add_div">
+                <button onclick="create()">Add Recipe +</button>
+               </div>
+            <table>
+                <thead>
+                    <th class="heading">Name of dish</th>
+                    <th class="heading">Recipe</th>
+                    <th class="heading">Action</th>
+                </thead>
+                <tbody class="data_table">
+
+                </tbody>
+            </table>
+
+                </div>
+            </div>
+        </main>
+    <script src="index.js"></script>
+</body>
+</html>
